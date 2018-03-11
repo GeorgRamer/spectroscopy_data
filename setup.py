@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='spectroscopy_data',
-     version='0.10',
+     version='0.11',
      description='Provides data to go along with spectroscopy.ramer.at',
      url='https://github.com/GeorgRamer/spectroscopy_data',
      download_url='https://github.com/GeorgRamer/spectroscopy_data/archive/0.10.tar.gz',
