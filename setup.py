@@ -1,10 +1,13 @@
 from setuptools import setup
 
+VERSION='0.12'
+
+
 setup(name='spectroscopy_data',
-     version='0.11',
+     version=VERSION,
      description='Provides data to go along with spectroscopy.ramer.at',
      url='https://github.com/GeorgRamer/spectroscopy_data',
-     download_url='https://github.com/GeorgRamer/spectroscopy_data/archive/0.10.tar.gz',
+     download_url='https://github.com/GeorgRamer/spectroscopy_data/archive/{}.tar.gz'.format(VERSION),
      author='Georg Ramer',
      author_email='georg.ramer@gmail.com',
      classifiers=['Development Status :: 4 - Beta',
