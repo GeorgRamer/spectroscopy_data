@@ -1,11 +1,19 @@
 from setuptools import setup
+import io, os
 
-VERSION='0.12'
+
+VERSION='0.13'
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with io.open(os.path.join(here, 'README'), encoding='utf-8') as f:
+    long_description = '\n' + f.read()
 
 
 setup(name='spectroscopy_data',
      version=VERSION,
      description='Provides data to go along with spectroscopy.ramer.at',
+     long_description = long_description,
      url='https://github.com/GeorgRamer/spectroscopy_data',
      download_url='https://github.com/GeorgRamer/spectroscopy_data/archive/{}.tar.gz'.format(VERSION),
      author='Georg Ramer',

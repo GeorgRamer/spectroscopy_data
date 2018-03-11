@@ -4,7 +4,7 @@ help:
 	@echo "deploy - upload to PyPI and github"
 
 
-dist: README LICENSE spectroscopy_blog/*.py
+dist: README LICENSE spectroscopy_data/*.py setup.py
 	python setup.py sdist
 	python setup.py bdist_wheel
 
