@@ -1,4 +1,4 @@
-from utils import spectrum
+from .utils import spectrum
 import numpy as np
 
 def integration():
