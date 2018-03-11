@@ -4,12 +4,13 @@ help:
 	@echo "deploy - upload to PyPI and github"
 
 
-dist: README LICENSE spectroscopy_data/*.py setup.py
+clean:
+	rm -rf dist/
+
+dist: clean
 	python setup.py sdist
 	python setup.py bdist_wheel
 
-clean:
-	rm -rf dist/
 
 deploy: dist
 	git push -u origin master
