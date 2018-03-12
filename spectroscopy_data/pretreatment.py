@@ -20,3 +20,14 @@ def polynomial_baseline():
             'spectrum':full_spec,
             'baseline':baseline,
             'spectrum_baseline':spectrum_baseline}
+
+
+def SG_smoothing():
+    band_params = [('gauss', 1, 1, 1485), 
+                   ('gauss', 2.5, 2.5, 1515),
+                   ('gauss', 5, 5, 1540),
+                   ('gauss', 10, 10, 1590)]
+    wn = np.arange(1460,1621)
+    noiseless = spectrum(wn, band_params)
+    noisy = noiseless + .1 * np.random.randn(*noiseless.shape)
+    return {"wn":wn, "noiseless":noiseless,"noisy":noisy}

@@ -2,7 +2,7 @@ from setuptools import setup
 import io, os
 
 
-VERSION='0.13'
+VERSION='0.14'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -25,5 +25,5 @@ setup(name='spectroscopy_data',
                   'Programming Language :: Python :: 3'],
     packages=['spectroscopy_data'],
     install_requires=['numpy','scipy'],
-    python_requires='>=3.3',
+    python_requires='>=3.6',
     include_package_data=True)
