@@ -14,4 +14,4 @@ dist: clean
 
 deploy: dist
 	git push -u origin master
-	twine upload dist/*
+	twine upload --skip-existing dist/*
